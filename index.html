@@ -1,0 +1,94 @@
+<!DOCTYPE html>    <!-- Bardziej zaawansowany toDo-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Lato" rel="stylesheet">
+		<title>ToDo List</title>
+	</head>
+	<body class="body">
+		<div class="container">
+			<div class="container__modal">
+  				<div class="modal__content">
+    				<span class="content__close">
+    					&times;
+    				</span>
+    				<form class="form">
+  						<div class="form__title">
+  							Title
+  							<input class="title__input" type="text" name="firstname">
+  						</div>
+  						<div class="form__data">
+  							Data
+  							<input class="data__input" type="text" name="firstname" disabled>
+  						</div>
+  						<div class="form__description">
+  							Description
+  							<textarea class="description__input"></textarea>
+  						</div>
+					</form>
+					<button class="content__button">
+  						Add note
+  					</button>
+ 	 			</div>
+			</div>
+			<div class="toturial-modal">
+				<div class="toturial-modal__content">
+					<span class="content__toturial-close">
+    					&times;
+    				</span>
+    				<img src="images/toturial.png" alt="">
+				</div>
+			</div>
+			<a class="container__add-button">
+				<img class="add-button__icon" src="images/add.svg" alt="add measurments">
+			</a>
+			<div class="app">
+				<div class="app__header">
+					<div class="header__toturial">
+						Click Here For Short Toturial !
+					</div>
+					<div class="header__intro">
+						<div class="intro__title">
+								Your
+							 	Things
+						</div>
+						<div class="intro__data">
+							Sep 5, 2018
+						</div>
+					</div>
+					<div class="header__statistics">
+						<div class="statistics">
+							<div class="statistics__note-amount">
+								<div class="note-amount__count">
+									99
+								</div>
+								<div class="note-amount__text">
+									Notes
+								</div>
+							</div>
+							<div class="statistics__done-amount">
+								<div class="done-amount__count">
+									4
+								</div>
+								<div class="done-amount__text">
+									Done
+								</div>
+							</div>
+						</div>
+						<div class="statistics__percent-done">
+							100% done.
+						</div>
+					</div>
+				</div>
+				<div class="app__body"> <!--po kliknieciu modal z data i czasem z ikonkami i edycja-->
+	
+				</div>
+			</div>
+		</div>
+		<script src='scripts/modal.js'></script>
+		<script src='scripts/add.js'></script>
+		<script src='scripts/tooltip.js'></script>
+	</body>
+</html>
